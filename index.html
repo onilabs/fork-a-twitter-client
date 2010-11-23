@@ -16,10 +16,10 @@
  
  
   Make sure the following line points to the location of your oni-apollo.js!
-  You can hotlink to http://code.onilabs.com/0.9.2/oni-apollo.js if you
+  You can hotlink to http://code.onilabs.com/apollo/0.10.0/oni-apollo.js if you
   want:
 --> 
-<script src="http://code.onilabs.com/0.9.2/oni-apollo.js"></script> 
+<script src="http://code.onilabs.com/apollo/0.10.0/oni-apollo.js"></script> 
  
 <script type="text/sjs"> 
 /*
@@ -65,14 +65,14 @@ var API_KEY = "DfUgYEGI3MYFainCIH09Ag";
 // Initialization
   
 // Load the @Anywhere API and init with your application id:
-var T = require("twitter").initAnywhere({id:API_KEY});
+var T = require("apollo:twitter").initAnywhere({id:API_KEY});
  
 // We'll use jquery; load it from Google's CDN and install stratified
 // bindings ($click, etc):
-require("jquery-binding").install();
+require("apollo:jquery-binding").install();
  
 // We'll also use various methods from the common module (supplant, ...)
-var common = require("common");
+var common = require("apollo:common");
  
 var tweeting_button = $("#tweeting_button");
 var status_el = $("#status");
